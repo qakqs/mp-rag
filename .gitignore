@@ -1,0 +1,6 @@
+/mp-rag-app/target/**/**
+mp-rag-api/target/maven-status/**
+/mp-rag-trigger/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+/*/target/*
+/data/log/*
+/.idea/**
