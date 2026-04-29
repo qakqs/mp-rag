@@ -1,13 +1,14 @@
 package org.rag.api;
 
+import org.rag.req.GenerateRequest;
 import org.springframework.ai.chat.ChatResponse;
 import reactor.core.publisher.Flux;
 
 public interface IAiService {
 
 
-    ChatResponse generate(String model, String message);
+    ChatResponse generate(GenerateRequest request);
 
-    Flux<ChatResponse> generateStream(String model, String message);
+    Flux<ChatResponse> generateStream(GenerateRequest request);
 
 }
