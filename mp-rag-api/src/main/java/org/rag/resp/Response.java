@@ -1,0 +1,22 @@
+package org.rag.resp;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.io.Serial;
+import java.io.Serializable;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class Response<T> implements Serializable {
+    @Serial
+    private static final long serialVersionUID = -3232101860331088370L;
+    private String code;
+    private String info;
+    private T data;
+
+}
