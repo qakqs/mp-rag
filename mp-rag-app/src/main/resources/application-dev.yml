@@ -10,8 +10,11 @@ spring:
     type: com.zaxxer.hikari.HikariDataSource
 
   ai:
-    ollama:
-      base-url: http://127.0.0.1:11434
+    dashscope:
+      api-key: sk-762e6e532c8a4745b881bbf2a7db7608
+      chat:
+        options:
+          model: qwen3-max
 
 # Redis
 redis:

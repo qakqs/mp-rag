@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.mp.rag</groupId>
         <artifactId>mp-rag</artifactId>
-        <version>${mp.rag.app.version}</version>
+        <version>1.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>mp-rag-app</artifactId>
@@ -24,7 +24,7 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.ai</groupId>
-            <artifactId>spring-ai-pgvector-store-spring-boot-starter</artifactId>
+            <artifactId>spring-ai-starter-vector-store-pgvector</artifactId>
         </dependency>
 
         <dependency>
@@ -46,10 +46,6 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.ai</groupId>
-            <artifactId>spring-ai-ollama</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
@@ -68,10 +64,13 @@
             <artifactId>fastjson</artifactId>
         </dependency>
         <dependency>
+            <groupId>com.alibaba.cloud.ai</groupId>
+            <artifactId>spring-ai-alibaba-starter-dashscope</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.eclipse.jgit</groupId>
             <artifactId>org.eclipse.jgit</artifactId>
         </dependency>
-
     </dependencies>
     <build>
         <finalName>mp-rag-app</finalName>

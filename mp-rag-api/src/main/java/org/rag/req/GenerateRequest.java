@@ -11,4 +11,5 @@ public class GenerateRequest implements Serializable {
 
     String model;
     String message;
+    String ragTag;
 }

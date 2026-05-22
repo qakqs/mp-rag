@@ -4,3 +4,4 @@ mp-rag-api/target/maven-status/**
 /*/target/*
 /data/log/*
 /.idea/**
+/mp-rag-app/data/log/**
