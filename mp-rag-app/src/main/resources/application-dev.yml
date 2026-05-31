@@ -15,6 +15,10 @@ spring:
       chat:
         options:
           model: qwen3-max
+    mcp:
+      client:
+        stdio:
+          servers-configuration: classpath:/config/ mcp-servers-config.json
 
 # Redis
 redis:

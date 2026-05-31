@@ -3,6 +3,8 @@ package org.rag.http;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.FileUtils;
+import org.eclipse.jgit.api.Git;
+import org.eclipse.jgit.transport.UsernamePasswordCredentialsProvider;
 import org.rag.api.IRAGService;
 import org.rag.resp.Response;
 import org.redisson.api.RList;
